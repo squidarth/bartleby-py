@@ -8,7 +8,7 @@ changes in variables as your program runs.
 `pip install redis`
 `pip install bartleby`
 
-## Depedencies
+## Dependencies
 
 * Python
 * redis
