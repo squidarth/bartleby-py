@@ -1,6 +1,6 @@
 import sys
 from flask import Flask
-from bartleby import Bartleby
+import bartleby
 
 class Coordinate(object):
   def __init__(self, x, y):
@@ -13,7 +13,7 @@ app.debug = True
 # This is how i get Tracer() in.
 @app.before_request
 def before_request():
-  Bartleby(["hello.py"])
+  bartleby.Bartleby(["hello.py"])
 
 @app.route("/")
 def hello():
